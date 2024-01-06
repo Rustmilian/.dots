@@ -1,0 +1,59 @@
+# Commandline Tools
+bat
+broot
+fastfetch
+fd
+fzf
+github-cli
+gping
+joshuto-bin
+less
+lsd
+ripgrep
+tealdeer
+
+# Firmware
+upd72020x-fw
+
+# Fonts
+noto-color-emoji-fontconfig-no-binding
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
+ttf-firacode-nerd
+
+# General System
+wl-clipboard-rs
+
+# Hardware Acceleration
+libva-mesa-driver
+libva-utils
+mesa-vdpau
+vdpauinfo
+
+# Kwallet
+kwalletmanager
+
+# OpenCL
+opencl-rusticl-mesa
+
+# Shell
+starship
+zsh
+zsh-autosuggestions
+zsh-syntax-highlighting
+
+# System Monitor
+bottom
+duf
+dust
+procs
+
+# Terminal
+alacritty
+
+# Text Editor
+helix
+
+# Vulkan
+vulkan-radeon

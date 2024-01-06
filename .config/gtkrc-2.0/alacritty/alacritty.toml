@@ -1,0 +1,34 @@
+[cursor]
+blink_interval = 500
+style = { blinking = "On", shape = "Beam"}
+thickness = 0.2
+unfocused_hollow = true
+
+[debug]
+prefer_egl = true
+
+[font]
+bold = { family = "FiraCode Nerd Font Mono" }
+normal = { family = "FiraCode Nerd Font Mono", style = "Regular" }
+
+[keyboard]
+bindings = [
+{ key = "Q", mods = "Super|Control" , action = "Quit" },
+]
+
+[mouse]
+bindings = [
+{ mouse = "Middle", mods = "Control", action = "Paste" }, { mouse = "Right", mods = "Control", action = "Copy" },
+]
+
+[terminal]
+osc52 = "CopyPaste"
+
+[shell]
+program = "/usr/bin/zsh"
+
+[window]
+dynamic_padding = true
+opacity = 0.9
+padding = { x = 5, y = 5}
+startup_mode = "Maximized"

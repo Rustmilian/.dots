@@ -1,0 +1,5 @@
+ 
+[submodule ".secrets"]
+	path = .secrets
+	url = git@github.com:Rustmilian/secrets.git
+	branch = main

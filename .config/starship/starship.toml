@@ -1,0 +1,96 @@
+
+# Use custom format
+format = """
+[$username](bold green)\
+$hostname\
+$localip\
+$shlvl\
+$singularity\
+$kubernetes\
+$directory\
+$vcsh\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$hg_branch\
+$docker_context\
+$package\
+$c\
+$cmake\
+$cobol\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$haskell\
+$helm\
+$java\
+$julia\
+$kotlin\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$raku\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$swift\
+$terraform\
+$vlang\
+$vagrant\
+$zig\
+$buf\
+$nix_shell\
+$conda\
+$meson\
+$spack\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$env_var\
+$crystal\
+$sudo\
+$cmd_duration\
+$jobs\
+$battery\
+$time\
+$status\
+$container\
+[via](blue) [>_<](green)$shell
+[->](bold green)[|](bold white)"""
+
+right_format = """[|](bold white)[<-](bold green)"""
+
+add_newline = false
+
+[git_status]
+style = "'white'"
+
+[shell]
+disabled = false
+zsh_indicator = "💤"
+
+[username]
+show_always = true
+style_user = "green"
+
+[sudo]
+disabled = false
+symbol = "🪄"
+style = "red"

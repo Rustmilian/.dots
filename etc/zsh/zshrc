@@ -1,0 +1,17 @@
+eval "$(starship init zsh)"
+fastfetch
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+setopt interactivecomments
+
+autoload -Uz compinit up-line-or-beginning-search down-line-or-beginning-search
+compinit
+zstyle ':completion:*' menu select
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+
+[[ -n "${key[Up]}"   ]] && bindkey -- "${key[Up]}"   up-line-or-beginning-search
+[[ -n "${key[Down]}" ]] && bindkey -- "${key[Down]}" down-line-or-beginning-search
+
+alias wget=wget --hsts-file="${XDG_DATA_HOME}/wget-hsts"
+alias adb='HOME="$XDG_DATA_HOME"/android adb'
